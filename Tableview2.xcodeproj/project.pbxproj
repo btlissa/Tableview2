@@ -12,6 +12,9 @@
 		9D3B3832248C9B8100BA0E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3B3830248C9B8100BA0E95 /* Main.storyboard */; };
 		9D3B3834248C9BB200BA0E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3B3833248C9BB200BA0E95 /* Assets.xcassets */; };
 		9D3B3837248C9BB200BA0E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3B3835248C9BB200BA0E95 /* LaunchScreen.storyboard */; };
+		9D3B3842248C9FBA00BA0E95 /* Model Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B3841248C9FBA00BA0E95 /* Model Types.swift */; };
+		9D451607248E058100E8C0D5 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D451605248E058000E8C0D5 /* CustomCell.swift */; };
+		9D451608248E058100E8C0D5 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D451606248E058100E8C0D5 /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		9D3B3833248C9BB200BA0E95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3B3836248C9BB200BA0E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D3B3838248C9BB200BA0E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3B3841248C9FBA00BA0E95 /* Model Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model Types.swift"; sourceTree = "<group>"; };
+		9D451605248E058000E8C0D5 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		9D451606248E058100E8C0D5 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +60,9 @@
 		9D3B382B248C9B8100BA0E95 /* Tableview2 */ = {
 			isa = PBXGroup;
 			children = (
+				9D3B3840248C9C7500BA0E95 /* View */,
+				9D3B383F248C9BF900BA0E95 /* Controller */,
 				9D3B383E248C9BEC00BA0E95 /* Model */,
-				9D3B382C248C9B8100BA0E95 /* AppDelegate.swift */,
-				9D3B382E248C9B8100BA0E95 /* ViewController.swift */,
-				9D3B3830248C9B8100BA0E95 /* Main.storyboard */,
-				9D3B3833248C9BB200BA0E95 /* Assets.xcassets */,
 				9D3B3835248C9BB200BA0E95 /* LaunchScreen.storyboard */,
 				9D3B3838248C9BB200BA0E95 /* Info.plist */,
 			);
@@ -68,8 +72,29 @@
 		9D3B383E248C9BEC00BA0E95 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9D3B3841248C9FBA00BA0E95 /* Model Types.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9D3B383F248C9BF900BA0E95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D3B382E248C9B8100BA0E95 /* ViewController.swift */,
+				9D451605248E058000E8C0D5 /* CustomCell.swift */,
+				9D3B382C248C9B8100BA0E95 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D3B3840248C9C7500BA0E95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D3B3830248C9B8100BA0E95 /* Main.storyboard */,
+				9D451606248E058100E8C0D5 /* CustomCell.xib */,
+				9D3B3833248C9BB200BA0E95 /* Assets.xcassets */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +157,7 @@
 			files = (
 				9D3B3837248C9BB200BA0E95 /* LaunchScreen.storyboard in Resources */,
 				9D3B3834248C9BB200BA0E95 /* Assets.xcassets in Resources */,
+				9D451608248E058100E8C0D5 /* CustomCell.xib in Resources */,
 				9D3B3832248C9B8100BA0E95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3B382F248C9B8100BA0E95 /* ViewController.swift in Sources */,
+				9D3B3842248C9FBA00BA0E95 /* Model Types.swift in Sources */,
+				9D451607248E058100E8C0D5 /* CustomCell.swift in Sources */,
 				9D3B382D248C9B8100BA0E95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +316,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZ6FAADBK2;
 				INFOPLIST_FILE = Tableview2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.batoulissa.Tableview2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,7 +336,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZ6FAADBK2;
 				INFOPLIST_FILE = Tableview2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.batoulissa.Tableview2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
