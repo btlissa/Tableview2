@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "Street:"; ObjectID = "1WE-PU-hXE"; */
+"1WE-PU-hXE.text" = "Rue:";
+
+/* Class = "UILabel"; text = "Company"; ObjectID = "3Vb-CK-m4A"; */
+"3Vb-CK-m4A.text" = "Entreprise";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "4HO-PQ-W4G"; */
+"4HO-PQ-W4G.text" = "Email:";
+
+/* Class = "UILabel"; text = "Zipcode:"; ObjectID = "4ys-qi-OSQ"; */
+"4ys-qi-OSQ.text" = "Zipcode:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HsH-Vg-yna"; */
+"HsH-Vg-yna.text" = "Label";
+
+/* Class = "UILabel"; text = "Username: "; ObjectID = "JkM-Ck-QyZ"; */
+"JkM-Ck-QyZ.text" = "Username: ";
+
+/* Class = "UILabel"; text = "City:"; ObjectID = "Q1n-4g-ujz"; */
+"Q1n-4g-ujz.text" = "Ville:";
+
+/* Class = "UILabel"; text = "Phone:"; ObjectID = "Qg0-0r-QUI"; */
+"Qg0-0r-QUI.text" = "Téléphone:";
+
+/* Class = "UILabel"; text = "Name: "; ObjectID = "V0S-ZI-fTf"; */
+"V0S-ZI-fTf.text" = "Nom: ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Xf2-dl-ROQ"; */
+"Xf2-dl-ROQ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Z9N-xO-ZnL"; */
+"Z9N-xO-ZnL.text" = "Label";
+
+/* Class = "UILabel"; text = "Personal Information"; ObjectID = "do0-v7-JnS"; */
+"do0-v7-JnS.text" = "Informations personnelles";
+
+/* Class = "UILabel"; text = "Role:"; ObjectID = "eBm-TN-VII"; */
+"eBm-TN-VII.text" = "Mission:";
+
+/* Class = "UILabel"; text = "Name: "; ObjectID = "eVy-gp-eaK"; */
+"eVy-gp-eaK.text" = "Nom: ";
+
+/* Class = "UINavigationItem"; title = "All Users"; ObjectID = "g08-HN-rgu"; */
+"g08-HN-rgu.title" = "Tous les utilisateurs";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iFF-G1-KLT"; */
+"iFF-G1-KLT.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kaP-FA-NEU"; */
+"kaP-FA-NEU.text" = "Label";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "lwM-aF-9yt"; */
+"lwM-aF-9yt.text" = "Addresse";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "u8i-Xq-YX6"; */
+"u8i-Xq-YX6.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xFz-CG-BeM"; */
+"xFz-CG-BeM.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "yYY-SH-Eun"; */
+"yYY-SH-Eun.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "z0P-BP-6Tc"; */
+"z0P-BP-6Tc.text" = "Label";

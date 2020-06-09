@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "usernameLbl"; ObjectID = "6qf-xP-s89"; */
+"6qf-xP-s89.text" = "usernameLbl";
+
+/* Class = "UILabel"; text = "nameLbl"; ObjectID = "9mW-6a-gzy"; */
+"9mW-6a-gzy.text" = "nameLbl";
+
+/* Class = "UIButton"; normalTitle = "Company Info"; ObjectID = "XWZ-2Q-6mn"; */
+"XWZ-2Q-6mn.normalTitle" = "Info d'entreprise";

@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Tableview2
+
+  Created by Batoul Issa on 6/9/20.
+  Copyright © 2020 Batoul Issa. All rights reserved.
+*/
+
+CFBundleDisplayName = "VueDeTableau2";
+
