@@ -14,6 +14,8 @@ class ViewController: UIViewController {
   
     var users = [User]()
     
+    let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,15 +35,23 @@ class ViewController: UIViewController {
                     self.users = try decoder.decode([User].self, from: jsonDate)
                     
                     DispatchQueue.main.async {
+                        self.refreshControl.endRefreshing()
                         self.usersTable.reloadData()
                     }
                 }
                 catch {
                     print(error.localizedDescription)
+                    
                 }
             }
+            self.refreshControl.endRefreshing()
         }
         task.resume()
+        
+    }
+    
+    @objc func refreshUsersData(_ sender: Any){
+        fetchUsers()
     }
     
     func tableConfig() {
@@ -51,13 +61,21 @@ class ViewController: UIViewController {
         usersTable.register(UINib(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "customCell")
         usersTable.estimatedRowHeight = 70
         usersTable.rowHeight = UITableViewAutomaticDimension
+        
+        usersTable.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshUsersData(_:)),for: .valueChanged)
+        refreshControl.tintColor = UIColor(red:0.25, green:0.72, blue:0.85, alpha:1.0)
+        let attributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12)]
+        refreshControl.attributedTitle = NSAttributedString(string:  NSLocalizedString("Fetching users's data", comment:""), attributes: attributes)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! DetailsViewController
-        
-        if let indexPath = usersTable.indexPathForSelectedRow {
-            destinationVC.user = users[indexPath.row]
+        if segue.identifier == "goToDetails"{
+            let destinationVC = segue.destination as! DetailsViewController
+            
+            if let indexPath = usersTable.indexPathForSelectedRow {
+                destinationVC.user = users[indexPath.row]
+            }
         }
     }
 }
@@ -84,7 +102,6 @@ extension ViewController: UITableViewDelegate {
         performSegue(withIdentifier: "goToDetails", sender: self)
     }
 }
-
 
 extension ViewController: CellDelegate {
    

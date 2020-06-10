@@ -1,6 +1,6 @@
 
 //
-//  CustomCellTableViewCell.swift
+//  CustomCell.swift
 //  Tableview2
 //
 //  Created by Batoul Issa on 6/9/20.
@@ -9,7 +9,6 @@
 
 import UIKit
 
-import UIKit
 
 protocol CellDelegate {
     func companyInfoClicked(username:String)

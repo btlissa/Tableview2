@@ -22,7 +22,6 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var companyLbl: UILabel!
     @IBOutlet weak var roleLbl: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         fillUser()
@@ -39,10 +38,6 @@ class DetailsViewController: UIViewController {
             zipCodeLbl.text = user.address.zipcode
             companyLbl.text = user.company.name
             roleLbl.text = user.company.bs
-            
         }
     }
-        
-
-
 }
