@@ -83,17 +83,18 @@ extension PhotosViewController : UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let paddingSpace = 5 * (itemsPerRow + 1)
+        let paddingSpace = 3 * (itemsPerRow - 1) + 20
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
         
         return CGSize(width: widthPerItem, height: widthPerItem)
     }
     
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
+        return 3
     }
 }
 
